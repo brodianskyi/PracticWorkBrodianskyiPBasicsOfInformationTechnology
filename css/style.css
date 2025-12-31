@@ -1,0 +1,45 @@
+/* Базовые стили и типографика */
+html { scroll-behavior: smooth; }
+body { background-color: #f5f7fb; color: #1f2937; }
+
+/* Герой-блок */
+.hero .rounded {
+  background: linear-gradient(135deg, #2563eb 0%, #22c1c3 100%);
+  color: #ffffff;
+  box-shadow: 0 6px 18px rgba(37, 99, 235, 0.18);
+}
+
+/* Индивидуальные фоны карточек (учебная палитра) */
+#key-findings .card { background-color: #e0f7fa; border-left: 6px solid #0288d1; }
+#comparison   .card { background-color: #eef7ff; border-left: 6px solid #3b82f6; }
+#steps        .card { background-color: #f0fff4; border-left: 6px solid #10b981; }
+#tech         .card { background-color: #faf5ff; border-left: 6px solid #8b5cf6; }
+
+.card-title { color: #0f172a; }
+.card { box-shadow: 0 5px 14px rgba(15, 23, 42, 0.06); }
+
+/* Блок «Главный тезис» — светло-зелёный */
+.card .alert.alert-primary { background-color: #d9fdd3; color: #0f172a; border-color: #a7e9a1; }
+
+/* Таблица и подвал */
+.table thead th { background-color: #3b82f6; color: #fff; }
+.table-hover tbody tr:hover { background-color: #f0f7ff; }
+.author-info { background-color: #fffbe6; border-left: 6px solid #f59e0b; }
+footer { background-color: #f1f5f9; }
+footer .text-muted { color: #475569 !important; }
+
+/* Стиль для вкладок */
+.nav-tabs .nav-link { font-weight: 600; }
+.nav-tabs .nav-link.active { color: #0f172a; border-color: #dee2e6 #dee2e6 #fff; }
+.tab-content { min-height: 300px; }
+
+/* Адаптивность */
+@media (max-width: 768px) { .hero h1 { font-size: 1.8rem; } }
+
+
+/* Переопределение: блок «Цель создания» (alert внутри секции #tech) — светло‑зелёный фон */
+#tech .alert.alert-primary {
+  background-color: #d9fdd3 !important; /* светло‑зелёный */
+  color: #0f172a !important;
+  border-color: #a7e9a1 !important;
+}
